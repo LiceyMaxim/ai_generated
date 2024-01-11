@@ -15,10 +15,11 @@
       <h1>Welcome to My Website</h1>
       <nav>
         <ul>
-          <li><a href="code.html">Code</a></li>
-          <li><a href="achivement.html">Achivement</a></li>
-          <li><a href="gallery.html">AI Girls</a></li>
-          <li><a href="table.html">Stackoverflow Delevoper Survey</a></li>
+          <li><a class="menu-link" href="../index.html">Main</a></li>
+          <li><a class="menu-link" href="code.html">Code</a></li>
+          <li><a class="menu-link" href="achivement.html">Achivement</a></li>
+          <li><a class="menu-link" href="gallery.html">AI Girls</a></li>
+          <li><a class="menu-link" href="table.html">Stackoverflow Delevoper Survey</a></li>
         </ul>
       </nav>
       <a href="../index.html" class="smiley-1">👋</a>
@@ -29,7 +30,7 @@
      <section id="gallery">
         <h2>AI Girls</h2>
         <div class="gallery-container">
-          <img src="https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/eceec0cf-c814-464f-aaea-fef00a727f51/original=true/00462-[number]-3548597835-_lora_Dreamyvibes%20artstyle%20SDXL%20-%20Reddit%20-%20Trigger%20with%20dreamyvibes%20artstyle_1_%20Dreamyvibes%20artstyle,%20A%20VW%20van%20rounds%20a%20curve%20in.jpeg" alt="Gallery Image 1" />
+          <img src="../static/media/girls/image_1.png" alt="Gallery Image 1" />
           <img src="../static/media/girls/image_2.png" alt="Gallery Image 2" />
           <img src="../static/media/girls/image_3.png" alt="Gallery Image 3" />
           <img src="../static/media/girls/image_4.png" alt="Gallery Image 4" />
@@ -43,5 +44,17 @@
     <footer>
       <p>© Semyonov Maxim Website</p>
     </footer>
+        <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const navLinks = document.querySelectorAll("nav ul li a");
+        const currentLocation = document.location.href;
+
+        navLinks.forEach((link) => {
+          if (currentLocation.includes(link.getAttribute("href"))) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

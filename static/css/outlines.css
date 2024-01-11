@@ -188,3 +188,22 @@ p {
 }
 
 
+.menu-link:hover {
+  text-decoration: none;
+  color: #c8c802;
+  border-bottom-color: rgba(208, 64, 0, 0.2);
+  
+}
+.menu-link {
+    color: #9e9e9e;
+    font-weight: 700;
+    text-shadow: none;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.active {
+  color: #c8c802; /* Red text color */
+  font-weight: bold;
+  text-decoration: none;
+}
