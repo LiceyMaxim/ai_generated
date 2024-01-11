@@ -207,3 +207,61 @@ p {
   font-weight: bold;
   text-decoration: none;
 }
+
+#note-app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#note-input {
+  width: calc(100% - 90px);
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#add-note-btn {
+  padding: 10px 20px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#add-note-btn:hover {
+  background-color: #4cae4c;
+}
+
+#notes-list {
+  list-style: none;
+  padding: 0;
+}
+
+#notes-list li {
+  background: #e7e7e7;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#notes-list li button {
+  padding: 5px 10px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#notes-list li button:hover {
+  background-color: #c9302c;
+}
