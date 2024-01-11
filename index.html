@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="static/css/outlines.css" />
     <script src="static/js/page-load-stats.js"></script>
   </head>
-
   <body>
     <header>
       <h1>Welcome to My Website</h1>
       <nav>
         <ul>
-          <li><a class="menu-link" href="index.html">Main</a></li>
-          <li><a class="menu-link" href="templates/code.html">Code</a></li>
+          <li>
+            <a class="menu-link" href="index.html">Main</a>
+          </li>
+          <li>
+            <a class="menu-link" href="templates/code.html">Code</a>
+          </li>
           <li>
             <a class="menu-link" href="templates/achivement.html">Achivement</a>
           </li>
@@ -24,19 +27,17 @@
             <a class="menu-link" href="templates/gallery.html">AI Girls</a>
           </li>
           <li>
-            <a class="menu-link" href="templates/table.html"
-              >Stackoverflow Delevoper Survey</a
-            >
+            <a class="menu-link" href="templates/table.html">Stackoverflow Delevoper Survey</a>
           </li>
-          <li><a class="menu-link" href="templates/constructor.html">TODO List</a></li>
+          <li>
+            <a class="menu-link" href="templates/constructor.html">TODO List</a>
+          </li>
         </ul>
       </nav>
       <a href="index.html" class="smiley-1">👋</a>
       <a href="index.html" class="smiley-2">🤌</a>
     </header>
-
     <main></main>
-
     <footer>
       <p>© Semyonov Maxim Website</p>
     </footer>
@@ -44,7 +45,6 @@
       document.addEventListener("DOMContentLoaded", (event) => {
         const navLinks = document.querySelectorAll("nav ul li a");
         const currentLocation = document.location.href;
-
         navLinks.forEach((link) => {
           if (currentLocation.includes(link.getAttribute("href"))) {
             link.classList.add("active");
@@ -54,7 +54,6 @@
     </script>
   </body>
 </html>
-
 <script>
   function myFunction() {
     var popup = document.getElementById("myPopup");
