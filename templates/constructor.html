@@ -7,6 +7,7 @@
     <title>Semyonov Maxim</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="../static/css/outlines.css" />
+    <link rel="stylesheet" href="../static/css/preloader.css" />
     <script src="../static/js/page-load-stats.js"></script>
   </head>
 
@@ -31,11 +32,13 @@
       <a href="../index.html" class="smiley-2">🤌</a>
     </header>
     <main>
+      <div id="preloader" style="display: none;">Loading...</div>
       <div id="note-app">
         <form id="note-form">
           <input type="text" id="note-input" placeholder="Enter a task" />
           <button type="submit" id="add-note-btn">Add Task</button>
         </form>
+        <button type="button" id="delete-all-btn">Delete All Tasks</button>
         <ul id="notes-list"></ul>
       </div>
     </main>
@@ -55,5 +58,6 @@
         });
       });
     </script>
+    <script src="../static/js/data-fetcher.js"></script>
   </body>
 </html>
